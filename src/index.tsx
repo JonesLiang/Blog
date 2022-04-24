@@ -1,7 +1,10 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './app'
-
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import Routers from './router'
 const root = createRoot(document.querySelector('#root')!)
-root.render(<App name="vortesnail" age={25} />)
+root.render(
+  <BrowserRouter>
+    <Routers></Routers>
+  </BrowserRouter>
+)

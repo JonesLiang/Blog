@@ -1,15 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-interface IProps {
-  name: string
-  age: number
-}
-
-function App(props: IProps) {
-  const { name, age } = props
+const App = () => {
   return (
-    <div className="app">
-      <span>{`Hello! I'm ${name}, ${age} years old.`}</span>
+    <div>
+      1234APP
+      <br />
+      <Link to={'/mine'}>mine</Link>
+      <br />
+      <Link to={'/home'}>home</Link>
+      <br />
+      <Link to={'/'}>app</Link>
+      <br />
+      <Link to={'/error'}>error</Link>
     </div>
   )
 }
